@@ -88,14 +88,25 @@ body {
   margin: 0.5rem 0;
 }
 
-/* Skills */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
+.skill-item.circle {
+  border-radius: 50%;
+  padding: 20px;
   text-align: center;
+  background-color: #f8cce7; /* light pink */
+  color: #4a0033; /* dark pink/purple tone */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
 }
-
-.skill-item {
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   background-color: #ffccd9;
   padding: 45px;
